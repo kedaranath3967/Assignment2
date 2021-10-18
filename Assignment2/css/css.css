@@ -1,0 +1,74 @@
+body{
+    background-image: url(../images/background1.jpg);
+}
+p{
+    color:yellow;;
+}
+h1,h2{
+    color: yellow;
+    text-align: center;
+}
+nav{
+    text-align: center;
+    background-image: url(../images/background%20image.jpg);
+}
+nav ul {
+ padding:.5em;
+}
+nav ul li {
+ display:inline;
+ margin:0 2%;
+}
+
+nav ul li a{
+ display:inline-block;
+ width:10em;
+ padding:.5em 0;
+ text-align:center;
+ font-weight:bold;
+ font-size:90%;
+}
+
+nav ul li a:link, nav ul li a:visited {
+ color: white;
+}
+
+nav ul li a:hover {
+ color:gray;
+ background-color:lightgray;
+}
+
+nav ul li a:active {
+ color: yellow;
+}
+figure{
+    float: left;
+}
+figcaption{
+    color: white;
+}
+.ui.table thead th{
+background:lightblue;
+color: white;
+}
+.ui.table > tr:nth-child(2n),
+.ui.table tbody tr:nth-child(2n) {
+background-color: chartreuse;
+}
+.ui.selectable.table tbody tr:hover,
+.ui.table tbody tr td.selectable:hover {
+ background-color: lightblue !important;
+}
+.ui.container {
+margin-top:5%;
+}
+
+.ui.card .description {
+  font-style:italic;
+  font-weight:bold;
+}
+
+.ui.card .date {
+  color:purple;
+}
+

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.css">
+    <link rel="stylesheet" href="css/css.css">
+    <title>Waterford chess club</title>
+
+</head>
+
+<body>
+<div class="ui stackable grid container">
+
+<header class = "sixteen wide column">
+      <h1>Waterford chess club</h1>
+     <nav>
+<ul>
+<li><a class="ui teal button" href = "index.html">Home</a></li>
+<li><a class="ui primary button" href = "contact.html">Appliction</a></li>
+<li><a class="ui orange button" href = "event.html">Events</a></li>
+<li><a class="ui purple button" href ="help.html">Help</a></li>
+<li><a class="ui positive button" href="image.html">Images</a></li>
+</ul>
+</nav>
+      <p id = "tagline">chess club for the Ireland - let's make a splash!</p>
+</header>
+<div id = "content" class = "ui row">
+<main class="thirteen wide column">
+<h2>Application form</h2>
+<p>To let us know about a forthcoming  event, please use the form below.</p>
+<p>If you need to get in touch urgently, please call our assistance on 01793
+641207. For anything else, please <a href="mailto:waterfordchess@gmail.com">drop us a line by email</a>.</p>  
+<form action="process.html" method="get" id = "contact" class="ui form" role="form">
+<div class = "inline field">
+    <label for="contactname" class="two wide field"><p> Name</p></label>
+    <input type="text" name="contactname" id="contactname" class="eight wide field" autofocus required pattern = "[A-Z][a-z]+( [A-Z][a-z]+)*" title="please enter your first name in capitalization">
+</div>
+<br>
+<div class="inline field">
+<label for = "telephone" class="two wide field"><p>Telephone
+    Number</p></label>
+<input type="tel" name="tel"  id="telephone" class="eight wide field" required pattern = "^(\(\d{3}\)|\d{3})-?\d{6,9}$" title="Enter only number">
+    </div>
+<br>
+<div class="inline field">
+    <label for = "name" class="two wide field"><p>Email Address</p></label>
+<input type="email" name="email" id="email" class="eight wide field" required pattern = "^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$" title="Enter correct email address using @gamil.com or @yahoo.com">
+</div>
+<br>
+<div class="inline field">
+    <label for = "text" class="two wide field"><p>What's the event called ?</p></label>
+<input type="text" name="text" id="name" class="eight wide field" required pattern ="\S{3,}" title="allow at least 3 characters">
+    </div>
+    <br>
+<div class="inline field">
+    <label for="start_date" class="two wide field"><p>When's the event happening?</p></label>
+<input type="date" name="start_date" id="start_date" class="eight wide field" required title="add current date">
+    </div>
+<br>
+    <div class="inline field">
+        <label for = "Age" class="two wide field"><p>What is your age?</p></label>
+<select name="Age" id="Age" class="eight wide field">
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="above 15">Above 15</option>
+</select>
+    </div>
+    <br>
+    <div class="inline field">
+        <label for = "platform" class="two wide field" ><p>Where are you from ?</p></label>
+<select name="eventname" id="eventname" class="eight wide field">
+<option value="south West">South West</option>
+<option value="south east">South East</option>
+<option value="midlands">Midlands</option>
+<option value="central">Central</option>
+<option value="london">London</option>
+<option value="east">East</option>
+<option value="north">North</option>
+<option value="scotland">Scotland</option>
+<option value="northen ireland">Northern Ireland</option>
+<option value="overseas">Overseas</option>
+</select>
+    </div>
+<br>
+<p>Please provide any other details you think will be useful to us in the text area below(it may save us calling or emailing you, and help avoid delays)</p>
+    <label for = "comments"><p>More details (as much as you think we'll need)</p></label>
+    <br>
+<textarea id="comments" name="comments" rows = "6" cols="200" >
+</textarea>
+<br>
+<p>If we need to call you back for any more info,what would be the best time to call you on the number supplied?</p>
+<br><input style="float:left" type="radio" name="format" id = "text" value="text" checked="checked">
+    <label for = "text" style="float:left"> <p>In the morning</p></label>
+    <br><input style="clear:left; float:left" type="radio" name="format" id = "html" value="html"/> <label for = "html" style="float:left"><p> In the afternoon</p></label>
+    <br><input style="clear:left; float:left" type="radio" name="format" id = "pdf" value="pdf"/><label for = "pdf" style="float:left"> <p>In the evening</p></label>
+<br><input style="clear:left; float:left" type="radio" name="format" id = "pdf" value="pdf"/><label for = "pdf" style="float:left">
+    <p>No calls please</p></label>
+<br><br>
+<p>club under may share information you give us here with other like-minded people or web sites to promote the events. Please confirm if you are happy for us to do this</p>
+<br>
+    <input type="checkbox" name="use" id="use" value="subscribe" checked="checked" style="float:left">
+    <label for = "use" style="float:left"><p>I am happy for this event to be publicized outside of and beyond chess club, where possible</p></label>
+<br>
+    <br>
+<input style="clear:left" type="submit" value="Submite" class="ui primary button">
+<input type="reset" value = "Reset" class="ui red button">
+</form>
+</main>
+</div></div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+</body>
+</html>
+
